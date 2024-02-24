@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/201/201614.png">
+    <style>
+        
+        .img{
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .heading>p{
+            font-size: xx-large;
+            font-weight: 900;
+            background: linear-gradient(60deg,rgb(0, 247, 255), rgb(254, 254, 255),  rgb(4, 27, 4));
+            display: inline-block;
+            padding: 5px;
+            color: transparent;
+            background-clip: text;
+        }
+        .nav{
+            background-color: rgba(255, 0, 0, 0.59);
+        }
+    </style>
+    
+    <%- style %>
+</head>
+<body>
+    <%- include('_header') %>
+
+    <%- body %>
+
+    <%- include('footer') %>
+
+    <%- script %>
+</body>
+</html>
